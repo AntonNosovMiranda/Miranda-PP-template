@@ -149,7 +149,15 @@
     height: 74px;
     & svg {
         & path {
+            transition: all 0.3s ease-in;
             fill: var(--color-swiper-arrow);
+        }
+    }
+    &:hover {
+        & svg {
+            & path {
+                fill: var(--color-swiper-arrow-hover);
+            }
         }
     }
 }
@@ -159,7 +167,15 @@
     & svg {
         transform: rotate(180deg);
         & path {
+            transition: all 0.3s ease-in;
             fill: var(--color-swiper-arrow);
+        }
+    }
+    &:hover {
+        & svg {
+            & path {
+                fill: var(--color-swiper-arrow-hover);
+            }
         }
     }
 }

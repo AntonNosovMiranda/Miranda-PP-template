@@ -504,7 +504,12 @@ svg.--color-fill path {
   height: 74px;
 }
 .swiper-button-prev svg path {
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
   fill: var(--color-swiper-arrow);
+}
+.swiper-button-prev:hover svg path {
+  fill: var(--color-swiper-arrow-hover);
 }
 
 .swiper-button-next {
@@ -516,7 +521,12 @@ svg.--color-fill path {
           transform: rotate(180deg);
 }
 .swiper-button-next svg path {
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
   fill: var(--color-swiper-arrow);
+}
+.swiper-button-next:hover svg path {
+  fill: var(--color-swiper-arrow-hover);
 }
 
 .benefits {
@@ -1962,7 +1972,7 @@ svg.--color-fill path {
           transform: translate(-100%, -100%);
   width: 100px;
   height: 100px;
-  background-color: var(--color-square-icon);
+  background-color: var(--color-square-icon-2);
 }
 @media (max-width: 767px) {
   .banner-nb__wrapper--text::before {
@@ -1985,7 +1995,7 @@ svg.--color-fill path {
           transform: translate(calc(-100% + 25px), 100%);
 }
 .banner-nb__squares rect {
-  fill: var(--color-square-icon);
+  fill: var(--color-square-icon-2);
 }
 @media (max-width: 767px) {
   .banner-nb__squares {
