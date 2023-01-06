@@ -1,0 +1,76 @@
+.miranda-review {
+    @media (max-width: $width-mobile) {
+        margin-bottom: 120px;
+    }
+}
+
+.miranda-review__container {
+    background-color: var(--color-background-3);
+
+    display: flex;
+    gap: 20px;
+    padding: 80px 100px;
+
+    @media (max-width: 1140px) {
+        flex-direction: column;
+        align-items: center;
+        gap: 80px;
+    }
+
+    @media (max-width: $width-mobile) {
+        padding: 20px;
+        gap: 20px;
+    }
+}
+
+.miranda-review__container > div {
+    flex: 1;
+}
+
+.miranda-review__image-wrapper {
+    margin-left: 13%;
+    text-align: right;
+    @media (max-width: 1140px) {
+        margin: 0;
+    }
+}
+
+.miranda-review__header {
+    text-align: left;
+}
+
+.miranda-review__name {
+    display: block;
+
+    font-size: rem(32);
+    line-height: em(42, 32);
+    font-weight: 700;
+    text-align: right;
+    color: var(--color-square-icon);
+
+    @media (max-width: $width-mobile) {
+        font-size: rem(22);
+        line-height: em(34, 22);
+    }
+}
+
+.miranda-review__position {
+    display: block;
+
+    font-size: rem(16);
+    line-height: em(28, 16);
+    font-weight: 400;
+    text-align: right;
+
+    @media (max-width: $width-mobile) {
+        font-size: rem(18);
+        line-height: em(28, 18);
+    }
+}
+
+.miranda-review__image {
+    display: inline-block;
+
+    width: 100%;
+    max-width: 550px;
+}

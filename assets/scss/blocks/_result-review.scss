@@ -1,0 +1,89 @@
+.result-review {
+    max-width: calc(1440px + 4rem);
+    margin: 120px auto;
+    padding: 0 2rem;
+
+    @media (max-width: $width-mobile) {
+        margin: 50px auto;
+        padding: 0 20px;
+    }
+}
+
+.result-review__container {
+    display: flex;
+    align-items: center;
+    @media (max-width: $width-mobile) {
+        flex-direction: column;
+        gap: 80px;
+    }
+}
+
+.result-review--reverse .result-review__container {
+    flex-direction: row-reverse;
+    @media (max-width: $width-mobile) {
+        flex-direction: column;
+        gap: 80px;
+    }
+}
+
+.result-review__container > div {
+    flex: 1;
+}
+
+.result-review__wrapper--image {
+    display: flex;
+    gap: 10px;
+}
+
+.result-review__wrapper--image .result-review__image-container:first-child {
+    position: relative;
+    margin-top: 25%;
+    &::before {
+        content: "";
+        width: 60px;
+        height: 60px;
+        background-color: var(--color-square-icon);
+
+        position: absolute;
+        right: 0;
+        top: -10px;
+        transform: translateY(-100%);
+    }
+}
+.result-review__wrapper--image .result-review__image-container:last-child {
+    position: relative;
+    margin-bottom: 25%;
+    &::before {
+        content: "";
+        width: 60px;
+        height: 60px;
+        background-color: var(--color-square-icon);
+
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        transform: translateY(100%);
+    }
+}
+
+.result-review__subwrapper {
+    margin-right: 0;
+    margin-left: 15.28%;
+    @media (max-width: $width-mobile) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+.result-review--reverse .result-review__subwrapper {
+    margin-right: 15.28%;
+    margin-left: 0;
+    @media (max-width: $width-mobile) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+.result-review__header {
+    text-align: left;
+}
