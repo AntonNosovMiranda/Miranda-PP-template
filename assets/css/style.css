@@ -2065,9 +2065,9 @@ svg.--color-fill path {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -2082,14 +2082,17 @@ svg.--color-fill path {
   }
 }
 
-.banner-third--reverse {
+.banner-third--reverse-flex-start {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 @media (max-width: 767px) {
-  .banner-third--reverse {
+  .banner-third--reverse-flex-start {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
@@ -2097,12 +2100,12 @@ svg.--color-fill path {
     gap: 20px;
   }
 }
-.banner-third--reverse .banner-third__wrapper-text {
+.banner-third--reverse-flex-start .banner-third__wrapper-text {
   margin-right: 0;
   margin-left: 7.6388888889%;
 }
 @media (max-width: 767px) {
-  .banner-third--reverse .banner-third__wrapper-text {
+  .banner-third--reverse-flex-start .banner-third__wrapper-text {
     width: 100%;
     margin-left: 0;
     margin-right: 0;

@@ -1,6 +1,6 @@
 .banner-third {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
     @media (max-width: $width-mobile) {
         flex-direction: column-reverse;
@@ -8,8 +8,9 @@
     }
 }
 
-.banner-third--reverse {
+.banner-third--reverse-flex-start {
     flex-direction: row-reverse;
+    align-items: flex-start;
 
     @media (max-width: $width-mobile) {
         flex-direction: column-reverse;
