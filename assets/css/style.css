@@ -1299,7 +1299,7 @@ svg.--color-fill path {
   font-weight: 700;
   font-size: 1.25rem;
   line-height: 1.5em;
-  color: #eeeeee;
+  color: #b4b5b4;
 }
 @media (max-width: 1100px) {
   .time-line__wrapper > div::after {
