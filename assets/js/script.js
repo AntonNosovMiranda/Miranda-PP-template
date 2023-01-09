@@ -1,3 +1,19 @@
+// Set the value of vw and wh variables
+
+function setVw() {
+    let vw = document.documentElement.clientWidth / 100;
+    document.documentElement.style.setProperty("--vw", `${vw}px`);
+}
+function setVh() {
+    let vh = document.documentElement.clientHeight / 100;
+    document.documentElement.style.setProperty("--vh", `${vh}px`);
+}
+
+setVw();
+setVh();
+window.addEventListener("resize", setVw);
+window.addEventListener("resize", setVh);
+
 // INIT SWIPER
 
 const mainSlider = new Swiper(".slider__slider", {
