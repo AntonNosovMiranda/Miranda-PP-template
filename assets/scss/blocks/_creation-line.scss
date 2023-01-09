@@ -86,7 +86,7 @@
     position: relative;
 
     &::before {
-        content: url("../img/svg/pin-short.svg");
+        content: url("../img/icons/pin-short.svg");
         position: absolute;
         top: 20px;
         left: 20px;
@@ -166,7 +166,7 @@
         height: 50px;
         background: #59dc6e;
         &::before {
-            content: url("../img/svg/pin-long.svg");
+            content: url("../img/icons/pin-long.svg");
         }
         &::after {
             content: " Back End";
@@ -176,7 +176,7 @@
             width: 50px;
             height: calc(var(--width-back-end) / 100 * 720px);
             &::before {
-                content: url("../img/svg/pin-short.svg");
+                content: url("../img/icons/pin-short.svg");
                 top: calc(50% - 30px);
                 left: 40px;
             }
@@ -206,7 +206,7 @@
         height: 50px;
         background: #dc9859;
         &::before {
-            content: url("../img/svg/pin-long.svg");
+            content: url("../img/icons/pin-long.svg");
         }
         &::after {
             content: "Testování";
@@ -216,7 +216,7 @@
             width: 50px;
             height: calc(var(--width-testing) / 100 * 720px);
             &::before {
-                content: url("../img/svg/pin-short.svg");
+                content: url("../img/icons/pin-short.svg");
                 top: calc(50% - 30px);
                 left: 40px;
             }

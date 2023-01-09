@@ -1009,7 +1009,7 @@ svg.--color-fill path {
   position: relative;
 }
 .creation-line__wrapper > div::before {
-  content: url("../img/svg/pin-short.svg");
+  content: url("../img/icons/pin-short.svg");
   position: absolute;
   top: 20px;
   left: 20px;
@@ -1093,7 +1093,7 @@ svg.--color-fill path {
   background: #59dc6e;
 }
 .creation-line__wrapper > .creation-line__back-end::before {
-  content: url("../img/svg/pin-long.svg");
+  content: url("../img/icons/pin-long.svg");
 }
 .creation-line__wrapper > .creation-line__back-end::after {
   content: " Back End";
@@ -1105,7 +1105,7 @@ svg.--color-fill path {
     height: calc(var(--width-back-end) / 100 * 720px);
   }
   .creation-line__wrapper > .creation-line__back-end::before {
-    content: url("../img/svg/pin-short.svg");
+    content: url("../img/icons/pin-short.svg");
     top: calc(50% - 30px);
     left: 40px;
   }
@@ -1136,7 +1136,7 @@ svg.--color-fill path {
   background: #dc9859;
 }
 .creation-line__wrapper > .creation-line__testing::before {
-  content: url("../img/svg/pin-long.svg");
+  content: url("../img/icons/pin-long.svg");
 }
 .creation-line__wrapper > .creation-line__testing::after {
   content: "Testování";
@@ -1148,7 +1148,7 @@ svg.--color-fill path {
     height: calc(var(--width-testing) / 100 * 720px);
   }
   .creation-line__wrapper > .creation-line__testing::before {
-    content: url("../img/svg/pin-short.svg");
+    content: url("../img/icons/pin-short.svg");
     top: calc(50% - 30px);
     left: 40px;
   }
@@ -2807,7 +2807,7 @@ svg.--color-fill path {
   background-color: var(--color-font);
 }
 .extra-solutions__button::after {
-  content: url("../img/svg/btn-arrow.svg");
+  content: url("../img/icons/btn-arrow.svg");
   line-height: 0;
   position: absolute;
   left: 10px;
