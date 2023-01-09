@@ -52,7 +52,9 @@
     justify-content: center;
     gap: 20px;
 
-    background-color: var(--color-background-2);
+    background-color: var(--color-slider-backgound);
+    border: 1px solid var(--color-slider-border);
+    color: var(--color-slider-text);
 
     @media (max-width: 1100px) {
         max-width: 332px;
@@ -61,6 +63,12 @@
 
     svg {
         max-height: 56px;
+        &.--color-stroke path {
+            stroke: var(--color-slider-icon);
+        }
+        &.--color-fill path {
+            fill: var(--color-slider-icon);
+        }
     }
     h4 {
         text-align: center;
@@ -83,14 +91,14 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: var(--color-primary);
+    background-color: var(--color-slider-content-backgound);
     padding: 0 50px;
 
     & p {
         font-size: rem(16);
         line-height: em(28, 16);
         font-weight: 400;
-        color: var(--color-white);
+        color: var(--color-slider-content-text);
     }
 }
 

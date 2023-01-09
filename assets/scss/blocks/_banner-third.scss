@@ -103,7 +103,7 @@
     margin-top: calc(210 / 700 * 100%);
     padding-top: 10px;
     padding-right: 10px;
-    background-color: var(--color-background-1);
+    background-color: var(--color-background);
 
     position: relative;
 
@@ -141,7 +141,8 @@
 }
 
 .section__banner {
-    background-color: var(--color-background-3);
+    background-color: var(--color-banner-background);
+    border: 1px solid var(--color-banner-border);
     padding: 50px;
     @media (max-width: $width-mobile) {
         padding: 20px;

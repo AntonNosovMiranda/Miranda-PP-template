@@ -17,35 +17,57 @@
     </head>
     <style>
         :root {
-            --color-primary: #393536;
-
-            --color-background-1: #fff;
-            --color-background-2: #fffdec;
-            --color-background-3: #fffdec;
-            --color-background-4: #393536;
-
-            --color-counter-1: #c0b17d4d;
-            --color-counter-2: #c0b17d4d;
-            --color-counter-border: #fff;
+            --color-white: #fff;
 
             --color-font: #222e27;
             --color-font-secondary: #656d68;
 
-            --color-white: #fff;
+            --color-background: #fff;
+            --color-section-background: #fffdec;
+            --color-banner-background: #fffdec;
+            --color-banner-border: #fffdec;
 
-            --color-icon: #bda872;
-            --color-icon-intro: #bda872;
-            --color-square-icon: #ca2f2d;
-            --color-square-icon-2: #ca2f2d;
-            --color-button-border: #bda872;
             --color-list-bullets: #ca2f2d;
+            --color-square-icon: #ca2f2d;
 
+            --color-button-border: #bda872;
+
+            /* SECTION: SLIDER */
+            --color-slider-backgound: #fffdec;
+            --color-slider-border: #fffdec;
+            --color-slider-text: #222e27;
+            --color-slider-icon: #bda872;
+            --color-slider-content-backgound: #393536;
+            --color-slider-content-text: #fff;
+
+            /* --SWIPER */
             --color-swiper-button: #de0628;
             --color-swiper-button-hover: #ca2f2d;
             --color-swiper-button-border: #de0628;
             --color-swiper-button-border-hover: #ca2f2d;
             --color-swiper-arrow: #fff;
             --color-swiper-arrow-hover: #fff;
+
+            /* --BENEFITS */
+            --color-benefits-background: #fffdec;
+            --color-benefits-border: #fffdec;
+            --color-benefits-text: #222e27;
+
+            /* SECTION: INTRO */
+            --color-intro-counter: #c0b17d4d;
+            --color-intro-counter-border: transparent;
+            --color-intro-grid-background: #393536;
+            --color-intro-grid-border: #393536;
+            --color-intro-grid-icon: #bda872;
+            --color-intro-grid-text: #fff;
+
+            /* SECTION: TASK-BANNER */
+            --color-task-banner-counter: #c0b17d4d;
+            --color-task-banner-counter-border: transparent;
+
+            /* SECTION: CREATION-LINE */
+            --color-creation-line-counter: #c0b17d4d;
+            --color-creation-line-counter-border: transparent;
 
             --width-analytics: 21;
             --width-graphics: 28;
@@ -61,6 +83,35 @@
             --width-month-3: 20;
             --width-month-4: 20;
             --width-month-rest: 20;
+
+            /* SECTION: DESIGN-PROCESS */
+            --color-design-process-counter: #c0b17d4d;
+            --color-design-process-counter-border: transparent;
+
+            /* --BANNER-NB */
+            --color-banner-nb-background: #fffdec;
+            --color-banner-nb-square: #ca2f2d;
+            --color-banner-nb-text: #222e27;
+            --color-banner-nb-overlay: transparent;
+
+            /* --BANNER-SLA */
+            --color-banner-sla-background: #e2eeffe5;
+            --color-banner-sla-overlay: #014eaa;
+
+            /* SECTION: RESULT-REVIEW */
+            --color-result-review-counter: #c0b17d4d;
+            --color-result-review-counter-border: transparent;
+
+            /* SECTION: MIRANDA-REVIEW */
+            --color-miranda-review-text: #222e27;
+            --color-miranda-review-name: #ca2f2d;
+            --color-miranda-review-background: #fffdec;
+
+            /* SECTION: EXTRA-SOLUTIONS */
+            --color-extra-solutions-counter: #c0b17d4d;
+            --color-extra-solutions-counter-border: transparent;
+            --color-extra-solutions-border: #bda872;
+            --color-extra-solutions-button: #bda872;
         }
     </style>
     <body>
@@ -608,7 +659,7 @@
                     </div>
                 </article>
 
-                <!-- BANNER-THIRD -->
+                <!-- -- BANNER-THIRD -->
                 <article class="banner-third container">
                     <div class="banner-third__wrapper banner-third__wrapper-text">
                         <div class="banner-third__text-container section__banner">
@@ -630,7 +681,7 @@
                     </div>
                 </article>
 
-                <!-- BANNER-THIRD--REVERSE-FLEX-START -->
+                <!-- -- BANNER-THIRD--REVERSE-FLEX-START -->
                 <article class="banner-third banner-third--reverse-flex-start container">
                     <div class="banner-third__wrapper banner-third__wrapper-text">
                         <div class="banner-third__text-container section__banner">
@@ -676,6 +727,29 @@
                         <div class="banner-third__image-2 orbitvu-container">
                             <img src="/assets/img/image-banner-third-4.jpg" width="490" height="490" alt="Foto pracovníka Svijany" />
                         </div>
+                    </div>
+                </article>
+
+                <!-- -- BANNER-FOURTH -->
+                <article class="banner-fourth container">
+                    <div class="banner-fourth__wrapper banner-fourth__wrapper--text">
+                        <div class="section__banner">
+                            <h class="section__banner-header">Typografie</h>
+                            <p class="section__banner-text">
+                                Důležitým nosným prvkem celkového designu se stala typografie a přechody textů do fotografií a bannerů.
+                            </p>
+                        </div>
+                        <div class="section__banner">
+                            <h class="section__banner-header">Home Page</h>
+                            <p class="section__banner-text">
+                                Na Home Page vznikl prostor pro carousel společně s doplňkovými baneny a krátkým welcome textem. Při scrolování do spodních
+                                částí hlavní strany vznikl prostor pro další fotky s produkty z nabídky a (krátké novinky) v magazínovém stylu doplněno o krátký
+                                slogan s výzvou.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="banner-fourth__wrapper banner-fourth__wrapper--image">
+                        <img src="assets/img/image-banner-fourth.jpg" width="960" height="610" alt="Obrázek sekce" />
                     </div>
                 </article>
 
@@ -842,7 +916,7 @@
             <!-- SECTION: EXTRA SOLUTIONS LIST -->
             <section class="extra-solutions container">
                 <div class="section__header-wrapper extra-solutions__header-wrapper">
-                    <h2 class="section__header section__header--counter">Co dalšího jsme na tomto e-shopu realizovali</h2>
+                    <h2 class="section__header section__header--counter extra-solutions__header">Co dalšího jsme na tomto e-shopu realizovali</h2>
                 </div>
                 <ul class="extra-solutions__list">
                     <li class="extra-solutions__item--visible">Proces objednávky, distribuce a fakturace</li>

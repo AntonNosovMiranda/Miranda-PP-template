@@ -26,7 +26,8 @@
     padding: 50px;
     margin-right: 0;
     margin-left: -130px;
-    background-color: var(--color-background-3);
+    background-color: var(--color-banner-background);
+    border: 1px solid var(--color-banner-border);
 
     @media (max-width: $width-mobile) {
         padding: 20px;

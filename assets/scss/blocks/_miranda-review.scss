@@ -5,11 +5,16 @@
 }
 
 .miranda-review__container {
-    background-color: var(--color-background-3);
+    background-color: var(--color-miranda-review-background);
 
     display: flex;
     gap: 20px;
     padding: 80px 100px;
+    background-color: var(--color-miranda-review-background);
+
+    p {
+        color: var(--color-miranda-review-text);
+    }
 
     @media (max-width: 1140px) {
         flex-direction: column;
@@ -30,13 +35,16 @@
 .miranda-review__image-wrapper {
     margin-left: 13%;
     text-align: right;
-    @media (max-width: 1140px) {
-        margin: 0;
-    }
 }
 
 .miranda-review__header {
     text-align: left;
+    color: var(--color-miranda-review-text);
+    &::before {
+        color: var(--color-miranda-review-counter);
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: var(--color-miranda-review-counter-border);
+    }
 }
 
 .miranda-review__name {
@@ -46,7 +54,7 @@
     line-height: em(42, 32);
     font-weight: 700;
     text-align: right;
-    color: var(--color-square-icon);
+    color: var(--color-miranda-review-name);
 
     @media (max-width: $width-mobile) {
         font-size: rem(22);

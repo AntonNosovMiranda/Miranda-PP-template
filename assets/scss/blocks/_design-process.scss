@@ -6,6 +6,14 @@
     }
 }
 
+.design-process__header {
+    &::before {
+        color: var(--color-design-process-counter);
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: var(--color-design-process-counter-border);
+    }
+}
+
 .design-process__wrapper {
     max-width: calc(1440px + 4rem);
     margin: 120px auto 80px auto;
