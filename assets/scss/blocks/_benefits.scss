@@ -41,6 +41,12 @@
         & svg {
             width: 32px;
             height: auto;
+            &.--color-stroke path {
+                stroke: var(--color-slider-icon);
+            }
+            &.--color-fill path {
+                fill: var(--color-slider-icon);
+            }
         }
 
         & h3 {

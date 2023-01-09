@@ -65,6 +65,7 @@ a {
   text-decoration: none;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  color: black;
   color: var(--color-font);
 }
 
@@ -568,6 +569,12 @@ button {
   .benefits__item-wrapper svg {
     width: 32px;
     height: auto;
+  }
+  .benefits__item-wrapper svg.--color-stroke path {
+    stroke: var(--color-slider-icon);
+  }
+  .benefits__item-wrapper svg.--color-fill path {
+    fill: var(--color-slider-icon);
   }
   .benefits__item-wrapper h3 {
     font-size: 1rem;
