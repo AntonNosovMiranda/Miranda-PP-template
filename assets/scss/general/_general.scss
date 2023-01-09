@@ -78,6 +78,15 @@ svg {
     }
 }
 
+.intro svg {
+    &.--color-stroke path {
+        stroke: var(--color-icon-intro);
+    }
+    &.--color-fill path {
+        fill: var(--color-icon-intro);
+    }
+}
+
 .container {
     max-width: calc(1440px + 4rem);
     padding: 0 2rem;
