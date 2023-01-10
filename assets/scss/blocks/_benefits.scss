@@ -42,10 +42,10 @@
             width: 32px;
             height: auto;
             &.--color-stroke path {
-                stroke: var(--color-slider-icon);
+                stroke: var(--color-benefits-icon);
             }
             &.--color-fill path {
-                fill: var(--color-slider-icon);
+                fill: var(--color-benefits-icon);
             }
         }
 

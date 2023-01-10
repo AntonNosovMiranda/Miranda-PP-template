@@ -1,0 +1,101 @@
+.miranda-review {
+    max-width: calc(1440px + 4rem);
+    padding: 0 2rem;
+    margin: 120px auto;
+
+    @media (max-width: $mobile-width) {
+        margin: 50px 0 120px 0;
+        padding: 0 20px;
+    }
+}
+
+.miranda-review__container {
+    @include container(1440px);
+    background-color: $color-secondary;
+
+    display: flex;
+    padding: 80px 100px;
+
+    @media (max-width: 1140px) {
+        flex-direction: column;
+        align-items: center;
+        gap: 80px;
+    }
+
+    @media (max-width: $mobile-width) {
+        padding: 20px;
+        gap: 20px;
+    }
+}
+
+.miranda-review__container > div {
+    flex: 1;
+}
+
+.miranda-review__subwrapper {
+    margin-left: 13%;
+    text-align: right;
+    @media (max-width: 1140px) {
+        margin: 0;
+    }
+}
+
+.miranda-review__header {
+    margin-bottom: 30px;
+    @media (max-width: $mobile-width) {
+        margin-bottom: 20px;
+    }
+}
+
+.miranda-review__text {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+
+    font-size: rem(20);
+    line-height: em(32, 20);
+    font-weight: 400;
+
+    @media (max-width: $mobile-width) {
+        font-size: rem(18);
+        line-height: em(28, 18);
+
+        margin-bottom: 20px;
+    }
+}
+
+.miranda-review__name {
+    display: block;
+
+    font-size: rem(32);
+    line-height: em(42, 32);
+    font-weight: 700;
+    text-align: right;
+    color: $color-primary;
+
+    @media (max-width: $mobile-width) {
+        font-size: rem(22);
+        line-height: em(34, 22);
+    }
+}
+
+.miranda-review__position {
+    display: block;
+
+    font-size: rem(16);
+    line-height: em(28, 16);
+    font-weight: 400;
+    text-align: right;
+
+    @media (max-width: $mobile-width) {
+        font-size: rem(18);
+        line-height: em(28, 18);
+    }
+}
+
+.miranda-review__photo {
+    display: inline-block;
+
+    width: 100%;
+    max-width: 550px;
+}

@@ -1,0 +1,686 @@
+.creation-line {
+    margin: 120px 0;
+    @media (max-width: $mobile-width) {
+        margin: 120px 0 50px 0;
+    }
+}
+
+.creation-line__header-wrapper {
+    margin: 120px 2rem;
+    @media (max-width: $mobile-width) {
+        margin: 120px 20px;
+        margin-bottom: 0;
+    }
+}
+
+// line parts --starts
+
+.creation-line__wrapper {
+    max-width: calc(1440px + 4rem);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    display: flex;
+    width: 100%;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 125px;
+        background-color: #222e27;
+        bottom: 0;
+        left: 2rem;
+        z-index: 10;
+    }
+    &::after {
+        content: "Start projektu";
+        white-space: nowrap;
+        font-family: inherit;
+        font-weight: 700;
+        font-size: rem(20);
+        line-height: em(30, 20);
+        position: absolute;
+        bottom: 125px;
+        left: calc(2rem + 10px);
+        transform: translate(0, 100%);
+    }
+
+    @media (max-width: 1100px) {
+        margin-top: 0;
+        margin-bottom: 120px;
+
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &::before {
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 120px;
+            height: 1px;
+        }
+        &::after {
+            width: fit-content;
+            top: 0;
+            left: 50%;
+            transform: unset;
+            transform: translate(-50%, -30px);
+            height: auto;
+        }
+    }
+    @media (max-width: $mobile-width) {
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+}
+.creation-line__wrapper > div {
+    @media (max-width: 1100px) {
+        width: 50px;
+    }
+    @media (max-width: 550px) {
+        &::after {
+            white-space: normal;
+            width: 100px;
+        }
+    }
+}
+.creation-line__analytics {
+    width: 300px;
+    height: 50px;
+    background: #d063d2;
+    position: relative;
+
+    &::before {
+        content: url("../img/svg/pin-short.svg");
+        position: absolute;
+        top: 20px;
+        left: 13.3%;
+    }
+    &::after {
+        content: "Analýza";
+        font-family: inherit;
+        font-weight: 400;
+        font-size: rem(16);
+        line-height: em(28, 16);
+        position: absolute;
+        top: 75px;
+        left: 13.3%;
+    }
+    @media (max-width: 1100px) {
+        height: 150px;
+        &::before {
+            top: calc(50% - 30px);
+            left: 40px;
+            transform: rotate(-90deg);
+        }
+        &::after {
+            top: 50%;
+            left: 85px;
+            transform: translateY(-50%);
+        }
+    }
+}
+.creation-line__graphics_1 {
+    width: 155px;
+    height: 50px;
+    background: #59b5dc;
+    position: relative;
+
+    &::before {
+        content: url("../img/svg/pin-short.svg");
+        position: absolute;
+        top: 20px;
+        left: 25.8%;
+    }
+    &::after {
+        content: "Wire Frame / Grafika";
+        white-space: nowrap;
+        font-family: inherit;
+        font-weight: 400;
+        font-size: rem(16);
+        line-height: em(28, 16);
+        position: absolute;
+        top: 75px;
+        left: 25.8%;
+    }
+    @media (max-width: 1100px) {
+        height: 77.5px;
+        &::before {
+            top: calc(50% - 30px);
+            left: 40px;
+            transform: rotate(-90deg);
+        }
+        &::after {
+            top: 50%;
+            left: 85px;
+            transform: translateY(-50%);
+        }
+    }
+}
+.creation-line__graphics_2 {
+    width: 255px;
+    height: 50px;
+    background: #59b5dc;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 90px;
+        background-color: #b4b5b4;
+        bottom: 0;
+        left: 0;
+    }
+    &::after {
+        content: "1. měsíc";
+        white-space: nowrap;
+        font-family: inherit;
+        font-weight: 700;
+        font-size: rem(20);
+        line-height: em(30, 20);
+        color: #eeeeee;
+        position: absolute;
+        bottom: 90px;
+        left: -10px;
+        transform: translate(-100%, 100%);
+    }
+    @media (max-width: 1100px) {
+        height: 127.5px;
+        &::before {
+            top: 0;
+            right: 0;
+            left: unset;
+            width: 90px;
+            height: 1px;
+        }
+        &::after {
+            top: -16px;
+            right: 100px;
+            left: unset;
+            transform: unset;
+            text-align: right;
+        }
+    }
+}
+.creation-line__web_1 {
+    width: 190px;
+    height: 50px;
+    background: #83dc59;
+    position: relative;
+
+    &::before {
+        content: url("../img/svg/pin-short.svg");
+        position: absolute;
+        top: 20px;
+        left: 21%;
+    }
+    &::after {
+        content: "Front End / Back End";
+        white-space: nowrap;
+        font-family: inherit;
+        font-weight: 400;
+        font-size: rem(16);
+        line-height: em(28, 16);
+        position: absolute;
+        top: 75px;
+        left: 21%;
+    }
+    @media (max-width: 1100px) {
+        height: 95px;
+        &::before {
+            top: calc(50% - 30px);
+            left: 40px;
+            transform: rotate(-90deg);
+        }
+        &::after {
+            top: 50%;
+            left: 85px;
+            transform: translateY(-50%);
+        }
+    }
+}
+.creation-line__web_2 {
+    width: 120px;
+    height: 50px;
+    background: #83dc59;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 90px;
+        background-color: #b4b5b4;
+        bottom: 0;
+        left: 0;
+    }
+    &::after {
+        content: "2. měsíc";
+        white-space: nowrap;
+        font-family: inherit;
+        font-weight: 700;
+        font-size: rem(20);
+        line-height: em(30, 20);
+        color: #eeeeee;
+        position: absolute;
+        bottom: 90px;
+        left: -10px;
+        transform: translate(-100%, 100%);
+    }
+    @media (max-width: 1100px) {
+        height: 60px;
+        &::before {
+            top: 0;
+            right: 0;
+            left: unset;
+            width: 90px;
+            height: 1px;
+        }
+        &::after {
+            top: -16px;
+            right: 100px;
+            left: unset;
+            transform: unset;
+            text-align: right;
+        }
+    }
+}
+.creation-line__back-end {
+    width: 60px;
+    height: 50px;
+    background: #59dc6e;
+    position: relative;
+
+    &::before {
+        content: url("../img/svg/pin-long.svg");
+        position: absolute;
+        top: 20px;
+        left: 33.3%;
+    }
+    &::after {
+        content: " Back End";
+        white-space: nowrap;
+        font-family: inherit;
+        font-weight: 400;
+        font-size: rem(16);
+        line-height: em(28, 16);
+        position: absolute;
+        top: 115px;
+        left: 33.3%;
+    }
+    @media (max-width: 1100px) {
+        height: 30px;
+        &::before {
+            content: url("../img/svg/pin-short.svg");
+            top: calc(50% - 30px);
+            left: 40px;
+            transform: rotate(-90deg);
+        }
+        &::after {
+            top: 50%;
+            left: 85px;
+            transform: translateY(-50%);
+        }
+    }
+}
+.creation-line__data {
+    width: 150px;
+    height: 50px;
+    background: #dcbf59;
+    position: relative;
+
+    &::before {
+        content: url("../img/svg/pin-short.svg");
+        position: absolute;
+        top: 20px;
+        left: 13.3%;
+    }
+    &::after {
+        content: "Naplnění daty";
+        white-space: nowrap;
+        font-family: inherit;
+        font-weight: 400;
+        font-size: rem(16);
+        line-height: em(28, 16);
+        position: absolute;
+        top: 75px;
+        left: 13.3%;
+    }
+    @media (max-width: 1100px) {
+        height: 75px;
+        &::before {
+            top: calc(50% - 30px);
+            left: 40px;
+            transform: rotate(-90deg);
+        }
+        &::after {
+            top: 50%;
+            left: 85px;
+            transform: translateY(-50%);
+        }
+    }
+}
+.creation-line__testing {
+    width: 70px;
+    height: 50px;
+    background: #dc9859;
+    position: relative;
+
+    &::before {
+        content: url("../img/svg/pin-long.svg");
+        position: absolute;
+        top: 20px;
+        left: 28.5%;
+    }
+    &::after {
+        content: "Testování";
+        font-family: inherit;
+        font-weight: 400;
+        font-size: rem(16);
+        line-height: em(28, 16);
+        position: absolute;
+        top: 115px;
+        left: 28.5%;
+    }
+    @media (max-width: 1100px) {
+        height: 35px;
+        &::before {
+            content: url("../img/svg/pin-short.svg");
+            top: calc(50% - 30px);
+            left: 40px;
+            transform: rotate(-90deg);
+        }
+        &::after {
+            top: 50%;
+            left: 85px;
+            transform: translateY(-50%);
+        }
+    }
+}
+.creation-line__client_1 {
+    width: 60px;
+    height: 50px;
+    background: #dc7859;
+    position: relative;
+
+    &::before {
+        content: url("../img/svg/pin-short.svg");
+        position: absolute;
+        top: 20px;
+        left: 33.3%;
+    }
+    &::after {
+        content: "Předaní klientovi";
+        white-space: nowrap;
+        font-family: inherit;
+        font-weight: 400;
+        font-size: rem(16);
+        line-height: em(28, 16);
+        position: absolute;
+        top: 75px;
+        left: 0px;
+    }
+    @media (max-width: 1100px) {
+        height: 30px;
+        &::before {
+            top: calc(50%);
+            left: 40px;
+            transform: rotate(-90deg);
+            z-index: 10;
+        }
+        &::after {
+            top: calc(50% + 30px);
+            left: 85px;
+            transform: translateY(-50%);
+        }
+    }
+}
+.creation-line__client_2 {
+    width: 60px;
+    height: 50px;
+    background: #dc7859;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 90px;
+        background-color: #b4b5b4;
+        bottom: 0;
+        left: 0;
+    }
+    &::after {
+        content: "3. měsíc";
+        white-space: nowrap;
+        font-family: inherit;
+        font-weight: 700;
+        font-size: rem(20);
+        line-height: em(30, 20);
+        color: #eeeeee;
+        position: absolute;
+        bottom: 90px;
+        left: -10px;
+        transform: translate(-100%, 100%);
+    }
+    @media (max-width: 1100px) {
+        height: 30px;
+        &::before {
+            top: 0;
+            right: 0;
+            left: unset;
+            width: 90px;
+            height: 1px;
+        }
+        &::after {
+            top: -16px;
+            right: 100px;
+            left: unset;
+            transform: unset;
+            text-align: right;
+        }
+    }
+}
+.creation-line__final {
+    width: 30px;
+    height: 50px;
+    background: #eeeeee;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 125px;
+        background-color: #222e27;
+        bottom: 0;
+        right: 0;
+        z-index: 10;
+    }
+    &::after {
+        content: "Termín spuštění";
+        white-space: nowrap;
+        font-family: inherit;
+        font-weight: 700;
+        font-size: rem(20);
+        line-height: em(30, 20);
+        position: absolute;
+        bottom: 125px;
+        right: 10px;
+        transform: translate(0, 100%);
+    }
+    @media (max-width: 1100px) {
+        height: 15px;
+        &::before {
+            top: unset;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 120px;
+            height: 1px;
+        }
+        &::after {
+            width: fit-content !important;
+            height: fit-content;
+            white-space: nowrap !important;
+
+            top: unset;
+            bottom: 0;
+            left: 50%;
+
+            transform: unset;
+            transform: translate(-50%, 100%);
+        }
+    }
+}
+
+// line parts --end
+
+.creation-line__content {
+    margin-left: calc(50% - 960px + 50px);
+    margin-right: calc(50% - 720px);
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 5%;
+
+    @media (max-width: 1920px) {
+        margin-left: 50px;
+    }
+    @media (max-width: 1540px) {
+        margin-left: calc(50% - 720px);
+    }
+    @media (max-width: 1504px) {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    @media (max-width: 920px) {
+        flex-direction: column;
+    }
+    @media (max-width: $mobile-width) {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+.creation-line__image-wrapper {
+    position: relative;
+    flex: 1.5;
+    max-width: 898px;
+
+    &::before {
+        content: "";
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 22.5%;
+        left: 15%;
+        background-color: $color-primary;
+    }
+    &::after {
+        content: "";
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        top: calc(22.5% + 50px);
+        left: calc(15% - 25px);
+        background-color: $color-primary;
+    }
+
+    @media (max-width: 920px) {
+        margin-bottom: 50px;
+    }
+    @media (max-width: $mobile-width) {
+        margin-bottom: 20px;
+        &::before {
+            display: none;
+        }
+        &::after {
+            display: none;
+        }
+    }
+}
+
+.creation-line__image-container {
+    &::before {
+        content: "";
+        width: 24px;
+        height: 60px;
+        position: absolute;
+        top: 60%;
+        right: 0;
+        transform: translateX(100%);
+        background-color: $color-primary;
+    }
+    &::after {
+        content: "";
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        bottom: 5%;
+        right: 10.5%;
+        background-color: $color-primary;
+    }
+    @media (max-width: $mobile-width) {
+        &::before {
+            display: none;
+        }
+        &::after {
+            display: none;
+        }
+    }
+}
+
+.creation-line__caption {
+    flex: 1;
+    max-width: 610px;
+
+    padding: 50px;
+    background-color: $color-secondary;
+    @media (max-width: 920px) {
+        margin-top: 0;
+        max-width: unset;
+    }
+    @media (max-width: $mobile-width) {
+        padding: 20px;
+    }
+}
+
+.creation-line__caption p {
+    @media (max-width: $mobile-width) {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -moz-box;
+        display: -webkit-box;
+        line-clamp: 4;
+        box-orient: vertical;
+        -moz-box-orient: vertical;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+    }
+}
+
+.--show .creation-line__caption p {
+    overflow: unset;
+    text-overflow: unset;
+    display: unset;
+    display: unset;
+    line-clamp: unset;
+    box-orient: unset;
+    -moz-box-orient: unset;
+    -webkit-line-clamp: unset;
+    -webkit-box-orient: unset;
+}
+
+.creation-line__button {
+    margin-top: 20px;
+}

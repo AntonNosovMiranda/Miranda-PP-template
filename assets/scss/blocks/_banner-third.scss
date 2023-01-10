@@ -8,6 +8,25 @@
     }
 }
 
+.banner-third--reverse {
+    flex-direction: row-reverse;
+
+    @media (max-width: $width-mobile) {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .banner-third__wrapper-text {
+        margin-right: 0;
+        margin-left: calc(110 / 1440 * 100%);
+        @media (max-width: $width-mobile) {
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+}
+
 .banner-third--reverse-flex-start {
     flex-direction: row-reverse;
     align-items: flex-start;

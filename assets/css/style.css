@@ -571,10 +571,10 @@ button {
     height: auto;
   }
   .benefits__item-wrapper svg.--color-stroke path {
-    stroke: var(--color-slider-icon);
+    stroke: var(--color-benefits-icon);
   }
   .benefits__item-wrapper svg.--color-fill path {
-    fill: var(--color-slider-icon);
+    fill: var(--color-benefits-icon);
   }
   .benefits__item-wrapper h3 {
     font-size: 1rem;
@@ -2140,6 +2140,33 @@ button {
   }
 }
 
+.banner-third--reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+@media (max-width: 767px) {
+  .banner-third--reverse {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    gap: 20px;
+  }
+}
+.banner-third--reverse .banner-third__wrapper-text {
+  margin-right: 0;
+  margin-left: 7.6388888889%;
+}
+@media (max-width: 767px) {
+  .banner-third--reverse .banner-third__wrapper-text {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
 .banner-third--reverse-flex-start {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
@@ -2359,6 +2386,9 @@ button {
 @media (max-width: 767px) {
   .banner-fourth__wrapper--image {
     margin-bottom: 0;
+    margin-left: -20px;
+    margin-right: -20px;
+    width: unset;
   }
 }
 
@@ -2778,6 +2808,7 @@ button {
 
 .miranda-review__name {
   display: block;
+  margin-top: 20px;
   font-size: 2rem;
   line-height: 1.3125em;
   font-weight: 700;

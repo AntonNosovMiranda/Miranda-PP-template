@@ -1,0 +1,120 @@
+.result-review {
+    max-width: calc(1440px + 4rem);
+    margin: 120px auto;
+    padding: 0 2rem;
+
+    @media (max-width: $width-mobile) {
+        margin: 50px auto;
+        padding: 0 20px;
+    }
+}
+
+.result-review__container {
+    display: flex;
+    align-items: center;
+    @media (max-width: $width-mobile) {
+        flex-direction: column;
+        gap: 80px;
+    }
+}
+
+.result-review__container > div {
+    flex: 1;
+}
+
+.result-review__wrapper--image {
+    display: flex;
+    gap: 10px;
+}
+
+.result-review__wrapper--image .result-review__image-container:first-child {
+    position: relative;
+    margin-top: 25%;
+    &::before {
+        content: "";
+        width: 60px;
+        height: 60px;
+        background-color: var(--color-primary);
+
+        position: absolute;
+        right: 0;
+        top: -10px;
+        transform: translateY(-100%);
+    }
+}
+.result-review__wrapper--image .result-review__image-container:last-child {
+    position: relative;
+    margin-bottom: 25%;
+    &::before {
+        content: "";
+        width: 60px;
+        height: 60px;
+        background-color: var(--color-primary);
+
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        transform: translateY(100%);
+    }
+}
+
+.result-review__subwrapper {
+    margin-left: 15.28%;
+    @media (max-width: $width-mobile) {
+        margin-left: 0;
+    }
+}
+
+.result-review__header {
+    position: relative;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.result-review__text {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 25px;
+
+    font-size: rem(20);
+    line-height: em(36, 20);
+    font-weight: 400;
+
+    @media (max-width: $width-mobile) {
+        font-size: rem(18);
+        line-height: em(28, 18);
+    }
+}
+
+.result-review__list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    margin: 0;
+    padding: 0;
+    padding-left: 30px;
+
+    list-style-type: none;
+}
+
+.result-review__list li {
+    position: relative;
+
+    font-size: rem(16);
+    line-height: em(28, 16);
+    font-weight: 400;
+
+    &::before {
+        content: "";
+
+        position: absolute;
+        top: 9px;
+        left: -20px;
+
+        width: 10px;
+        height: 10px;
+        background-color: var(--color-primary);
+        line-height: 0;
+    }
+}
