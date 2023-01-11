@@ -1959,9 +1959,6 @@ button {
 .banner-nb {
   margin: 120px 0;
   margin-top: 0;
-  background-position: left;
-  background-size: cover;
-  background-repeat: no-repeat;
   padding: 120px 80px 105px calc(50% - 720px);
 }
 @media (max-width: 1504px) {
