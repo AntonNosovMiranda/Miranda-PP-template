@@ -1960,6 +1960,10 @@ button {
   margin: 120px 0;
   margin-top: 0;
   padding: 120px 80px 105px calc(50% - 720px);
+  background-image: var(--background-image-nb);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 @media (max-width: 1504px) {
   .banner-nb {
@@ -1972,6 +1976,11 @@ button {
     margin-top: 0;
     padding: 50px 20px;
   }
+}
+
+.banner-nb.--tile {
+  background-repeat: repeat;
+  background-size: contain;
 }
 
 .banner-nb--custom-rituals {
