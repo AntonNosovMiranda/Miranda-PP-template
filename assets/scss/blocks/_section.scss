@@ -165,9 +165,9 @@
     }
 
     &:hover {
-        background-color: var(--color-primary);
+        background-color: var(--color-button-border);
         color: var(--color-white);
-        border-color: var(--color-primary);
+        border-color: var(--color-button-border);
         &:after {
             border-color: var(--color-white);
         }

@@ -275,9 +275,9 @@ button {
   transition: all 0.3s ease;
 }
 .section__button:hover {
-  background-color: var(--color-primary);
+  background-color: var(--color-button-border);
   color: var(--color-white);
-  border-color: var(--color-primary);
+  border-color: var(--color-button-border);
 }
 .section__button:hover:after {
   border-color: var(--color-white);
