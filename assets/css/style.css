@@ -349,6 +349,35 @@ button {
   }
 }
 
+.slider__image--custom-klokocka {
+  aspect-ratio: 1/1;
+}
+.slider__image--custom-klokocka img {
+  background-color: var(--color-white);
+  position: relative;
+  left: 100%;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  max-width: unset;
+  max-height: 100%;
+  width: auto;
+}
+@media (max-width: 767px) {
+  .slider__image--custom-klokocka {
+    aspect-ratio: unset;
+    position: unset;
+    left: unset;
+    -webkit-transform: unset;
+            transform: unset;
+    width: 100%;
+    min-width: unset;
+    max-width: unset;
+  }
+  .slider__image--custom-klokocka img {
+    width: 100%;
+  }
+}
+
 .slider__slider {
   width: calc(75% - 5px);
   overflow: unset;
