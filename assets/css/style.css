@@ -59,6 +59,11 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  background-color: var(--color-image-background);
+}
+
+img.--without-background {
+  background-color: unset;
 }
 
 a {
@@ -338,6 +343,9 @@ button {
     width: 100%;
     min-width: unset;
     max-width: unset;
+  }
+  .slider__image img {
+    width: unset;
   }
 }
 
@@ -653,6 +661,9 @@ button {
 @media (max-width: 767px) {
   .intro__wrapper--image {
     height: auto;
+  }
+  .intro__wrapper--image img {
+    width: unset;
   }
 }
 
@@ -1948,7 +1959,6 @@ button {
 .banner-nb {
   margin: 120px 0;
   margin-top: 0;
-  background: url("../img/background-banner-nb.jpg");
   background-position: left;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1983,7 +1993,7 @@ button {
   max-width: 542px;
   aspect-ratio: 1/1;
   content: "";
-  background-image: url("../img/image-banner-nb-2.png");
+  background-image: url("../img/rituals/image-banner-nb-2.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top 0 left 0;

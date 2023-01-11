@@ -53,6 +53,11 @@ img {
     display: block;
     max-width: 100%;
     height: auto;
+    background-color: var(--color-image-background);
+}
+
+img.--without-background {
+    background-color: unset;
 }
 
 a {

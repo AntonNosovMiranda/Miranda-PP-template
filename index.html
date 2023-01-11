@@ -31,6 +31,7 @@
             --color-square-icon: #ca2f2d;
 
             --color-button-border: #bda872;
+            --color-image-background: #014eaa;
 
             /* SECTION: SLIDER */
             --color-slider-backgound: #fffdec;
@@ -94,6 +95,7 @@
             --color-banner-nb-square: #ca2f2d;
             --color-banner-nb-text: #222e27;
             --color-banner-nb-overlay: transparent;
+            --background-image-nb: url("assets/img/template/background-banner-nb.jpg");
 
             /* --BANNER-SLA */
             --color-banner-sla-background: #e2eeffe5;
@@ -124,7 +126,7 @@
                 <h2 class="sr-only">Seznam hlavních řešení na e-shopu</h2>
                 <div class="slider__container container">
                     <div class="slider__image">
-                        <img src="assets/img/image-slider.jpg" alt="Philips" />
+                        <img src="assets/img/template/image-slider.jpg" alt="Obrázek sekce" width="345" height="345" />
 
                         <div class="slider__buttons">
                             <div class="swiper-button-prev">
@@ -336,7 +338,7 @@
             <section class="intro container">
                 <div class="intro__container">
                     <div class="intro__wrapper intro__wrapper--image">
-                        <img src="assets/img/image-intro.jpg" width="720" height="720" alt="Philips" />
+                        <img src="assets/img/template/image-intro.jpg" width="720" height="720" alt="Obrázek sekce" />
                     </div>
                     <div class="intro__wrapper intro__wrapper--text">
                         <h2 class="section__header section__header--counter-2 intro__header">Představení klienta</h2>
@@ -402,7 +404,7 @@
                     </div>
 
                     <div class="intro__flex-item intro__flex-item--image">
-                        <img src="assets/img/image-intro-grid.jpg" alt="Svijany" />
+                        <img src="assets/img/template/image-intro-grid.jpg" alt="Obrázek sekce" width="240" height="240" />
                     </div>
 
                     <div class="intro__flex-item intro__flex-item--long intro__flex-item--100">
@@ -467,7 +469,7 @@
                     </div>
                     <div class="task-banner__wrapper">
                         <div class="task-banner__image-wrapper">
-                            <img class="task-banner__image" src="assets/img/image-task-banner.jpg" alt="Obrázek sekce" width="550" height="550" />
+                            <img class="task-banner__image" src="assets/img/template/image-task-banner.jpg" alt="Obrázek sekce" width="550" height="550" />
                         </div>
                     </div>
                 </div>
@@ -503,7 +505,12 @@
                 <div class="creation-line__content">
                     <div class="creation-line__image-wrapper">
                         <div class="creation-line__image-container">
-                            <img class="creation-line__image" src="assets/img/image-creation-line.png" alt="Obrázek sekce" width="898" height="716" />
+                            <img
+                                class="creation-line__image --without-background"
+                                src="assets/img/template/image-creation-line.png"
+                                alt="Obrázek sekce"
+                                width="898"
+                                height="716" />
                         </div>
                     </div>
 
@@ -540,7 +547,7 @@
                 <!-- -- BANNER-FIRST -->
                 <article class="banner-first">
                     <div class="banner-first__image-wrap">
-                        <img src="assets/img/image-banner-first-1.jpg" alt="Obrázek sekce" width="960" height="720" />
+                        <img src="assets/img/template/image-banner-first-1.jpg" alt="Obrázek sekce" width="960" height="720" />
                     </div>
                     <div class="banner-first__text-wrap">
                         <h3 class="section__banner-header">Individualiazace e-shopu</h3>
@@ -561,7 +568,7 @@
                 <!-- -- BANNER-FIRST--REVERSE -->
                 <article class="banner-first banner-first--reverse">
                     <div class="banner-first__image-wrap">
-                        <img src="assets/img/image-banner-first-1.jpg" alt="Obrázek sekce" width="960" height="720" />
+                        <img src="assets/img/template/image-banner-first-1.jpg" alt="Obrázek sekce" width="960" height="720" />
                     </div>
                     <div class="banner-first__text-wrap">
                         <h3 class="section__banner-header">Individualiazace e-shopu</h3>
@@ -583,18 +590,13 @@
                 <article class="banner-second">
                     <div class="banner-second__container">
                         <div class="banner-second__wrapper banner-second__wrapper--image">
+                            <img class="banner-second__image" src="assets/img/template/image-banner-second.jpg" width="860" height="1475" alt="Obrázek sekce" />
                             <img
-                                class="banner-second__image"
-                                src="assets/img/image-banner-second.jpg"
-                                width="860"
-                                height="1475"
-                                alt="Obrázek webových stránek Svijany" />
-                            <img
-                                class="banner-second__image-nb"
-                                src="assets/img/image-banner-second-nb.png"
+                                class="banner-second__image-nb --without-background"
+                                src="assets/img/template/image-banner-second-nb.png"
                                 width="1460"
                                 height="780"
-                                alt="Obrázek počítače se stránkou Svijany" />
+                                alt="Obrázek sekce" />
                         </div>
                         <div class="banner-second__wrapper banner-second__wrapper--text">
                             <h3 class="section__banner-header">E-shop, který B2B</h3>
@@ -611,18 +613,13 @@
                 <article class="banner-second banner-second--reverse">
                     <div class="banner-second__container">
                         <div class="banner-second__wrapper banner-second__wrapper--image">
+                            <img class="banner-second__image" src="assets/img/template/image-banner-second.jpg" width="860" height="1475" alt="Obrázek sekce" />
                             <img
-                                class="banner-second__image"
-                                src="assets/img/image-banner-second.jpg"
-                                width="860"
-                                height="1475"
-                                alt="Obrázek webových stránek Svijany" />
-                            <img
-                                class="banner-second__image-nb"
-                                src="assets/img/image-banner-second-nb.png"
+                                class="banner-second__image-nb --without-background"
+                                src="assets/img/template/image-banner-second-nb.png"
                                 width="1460"
                                 height="780"
-                                alt="Obrázek počítače se stránkou Svijany" />
+                                alt="Obrázek sekce" />
                         </div>
                         <div class="banner-second__wrapper banner-second__wrapper--text">
                             <h3 class="section__banner-header">E-shop, který B2B</h3>
@@ -636,7 +633,7 @@
                 </article>
 
                 <!-- -- BANNER-NB -->
-                <article class="banner-nb">
+                <article class="banner-nb" style="background: var(--background-image-nb)">
                     <div class="banner-nb__container">
                         <div class="banner-nb__wrapper banner-nb__wrapper--text">
                             <h3 class="section__banner-header">Celý návrh vznikl v desktopové a mobilní verzi</h3>
@@ -651,11 +648,11 @@
                         </div>
                         <div class="banner-nb__wrapper banner-nb__wrapper--image">
                             <img
-                                class="banner-nb__image"
-                                src="assets/img/image-banner-nb.png"
+                                class="banner-nb__image --without-background"
+                                src="assets/img/template/image-banner-nb.png"
                                 width="1165"
                                 height="975"
-                                alt="Obrázek počítače se stránkou Svijany" />
+                                alt="Obrázek sekce" />
                         </div>
                     </div>
                 </article>
@@ -674,10 +671,10 @@
                     </div>
                     <div class="banner-third__wrapper banner-third__wrapper-image">
                         <div class="banner-third__image-1">
-                            <img src="assets/img/image-banner-third-1.jpg" width="340" width="340" alt="Obrázek sklenice Svijany" />
+                            <img src="assets/img/template/image-banner-third-1.jpg" width="340" height="340" alt="Obrázek sekce" />
                         </div>
                         <div class="banner-third__image-2 orbitvu-container">
-                            <img src="assets/img/image-banner-third-2.jpg" width="490" height="490" alt="Obrázek lahve Svijany" />
+                            <img src="assets/img/template/image-banner-third-2.jpg" width="490" height="490" alt="Obrázek sekce" />
                         </div>
                     </div>
                 </article>
@@ -723,10 +720,10 @@
                     </div>
                     <div class="banner-third__wrapper banner-third__wrapper-image">
                         <div class="banner-third__image-1">
-                            <img src="assets/img/image-banner-third-3.jpg" width="340" width="340" alt="Logo Svijany" />
+                            <img src="assets/img/template/image-banner-third-3.jpg" width="340" height="340" alt="Obrázek sekce" />
                         </div>
                         <div class="banner-third__image-2 orbitvu-container">
-                            <img src="assets/img/image-banner-third-4.jpg" width="490" height="490" alt="Foto pracovníka Svijany" />
+                            <img src="assets/img/template/image-banner-third-4.jpg" width="490" height="490" alt="Obrázek sekce" />
                         </div>
                     </div>
                 </article>
@@ -772,10 +769,10 @@
                     </div>
                     <div class="banner-third__wrapper banner-third__wrapper-image">
                         <div class="banner-third__image-1">
-                            <img src="assets/img/image-banner-third-3.jpg" width="340" width="340" alt="Logo Svijany" />
+                            <img src="assets/img/template/image-banner-third-3.jpg" width="340" height="340" alt="Obrázek sekce" />
                         </div>
                         <div class="banner-third__image-2 orbitvu-container">
-                            <img src="assets/img/image-banner-third-4.jpg" width="490" height="490" alt="Foto pracovníka Svijany" />
+                            <img src="assets/img/template/image-banner-third-4.jpg" width="490" height="490" alt="Obrázek sekce" />
                         </div>
                     </div>
                 </article>
@@ -799,14 +796,14 @@
                         </div>
                     </div>
                     <div class="banner-fourth__wrapper banner-fourth__wrapper--image">
-                        <img src="assets/img/image-banner-fourth.jpg" width="960" height="610" alt="Obrázek sekce" />
+                        <img src="assets/img/template/image-banner-fourth.jpg" width="960" height="610" alt="Obrázek sekce" />
                     </div>
                 </article>
 
                 <!-- -- BANNER-FIRST -->
                 <article class="banner-first">
                     <div class="banner-first__image-wrap">
-                        <img src="assets/img/image-banner-first-2.jpg" alt="Obrázek sekce" width="960" height="720" />
+                        <img src="assets/img/template/image-banner-first-2.jpg" alt="Obrázek sekce" width="960" height="720" />
                     </div>
                     <div class="banner-first__text-wrap">
                         <h3 class="section__banner-header">Scraping dat a obrázků - významné ušetření času</h3>
@@ -848,14 +845,19 @@
                     </div>
                     <div class="add-ons__wrapper add-ons__wrapper--image">
                         <div class="add-ons__image-container">
-                            <img class="add-ons__image" src="assets/img/image-add-ons.png" alt="Obrázek sekce" width="645" height="718" />
+                            <img
+                                class="add-ons__image --without-background"
+                                src="assets/img/template/image-add-ons.png"
+                                alt="Obrázek sekce"
+                                width="645"
+                                height="718" />
                         </div>
                     </div>
                 </article>
 
                 <!-- BANNER-SLA -->
                 <article class="sla">
-                    <img class="sla__background" src="assets/img/background-sla.jpg" alt="Obrázek pozadí sekce" />
+                    <img class="sla__background" src="assets/img/template/background-sla.jpg" alt="Obrázek pozadí sekce" />
                     <div class="sla__container">
                         <div class="sla__wrapper">
                             <h3 class="section__banner-header">SLA</h3>
@@ -874,13 +876,18 @@
                 <div class="result-review__container">
                     <div class="result-review__wrapper result-review__wrapper--image">
                         <div class="result-review__image-container">
-                            <img class="result-review__image" src="assets/img/image-result-review-1.jpg" alt="Obrázek piva Svijany" width="355" height="535" />
+                            <img
+                                class="result-review__image"
+                                src="assets/img/template/image-result-review-1.jpg"
+                                alt="Obrázek sekce"
+                                width="355"
+                                height="535" />
                         </div>
                         <div class="result-review__image-container">
                             <img
                                 class="result-review__image"
-                                src="assets/img/image-result-review-2.jpg"
-                                alt="Obrázek sklenice Svijany"
+                                src="assets/img/template/image-result-review-2.jpg"
+                                alt="Obrázek sekce"
                                 width="355"
                                 height="535" />
                         </div>
@@ -908,13 +915,18 @@
                 <div class="result-review__container">
                     <div class="result-review__wrapper result-review__wrapper--image">
                         <div class="result-review__image-container">
-                            <img class="result-review__image" src="assets/img/image-result-review-1.jpg" alt="Obrázek piva Svijany" width="355" height="535" />
+                            <img
+                                class="result-review__image"
+                                src="assets/img/template/image-result-review-1.jpg"
+                                alt="Obrázek sekce"
+                                width="355"
+                                height="535" />
                         </div>
                         <div class="result-review__image-container">
                             <img
                                 class="result-review__image"
-                                src="assets/img/image-result-review-2.jpg"
-                                alt="Obrázek sklenice Svijany"
+                                src="assets/img/template/image-result-review-2.jpg"
+                                alt="Obrázek sekce"
                                 width="355"
                                 height="535" />
                         </div>
@@ -957,7 +969,7 @@
                     </div>
                     <div class="miranda-review__wrapper">
                         <div class="miranda-review__image-wrapper">
-                            <img class="miranda-review__image" src="assets/img/photo-miranda.jpg" alt="Foto Tomáše Ciny" width="550" height="550" />
+                            <img class="miranda-review__image" src="assets/img/template/photo-miranda.jpg" alt="Foto Tomáše Ciny" width="550" height="550" />
                         </div>
                     </div>
                 </div>

@@ -22,6 +22,9 @@
     height: 0;
     @media (max-width: $width-mobile) {
         height: auto;
+        img {
+            width: unset;
+        }
     }
 }
 
