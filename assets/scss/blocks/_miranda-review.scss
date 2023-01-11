@@ -35,6 +35,9 @@
 .miranda-review__image-wrapper {
     margin-left: 13%;
     text-align: right;
+    @media (max-width: $width-mobile) {
+        margin-left: unset;
+    }
 }
 
 .miranda-review__header {

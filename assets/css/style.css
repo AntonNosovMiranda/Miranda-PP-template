@@ -2802,6 +2802,11 @@ button {
   margin-left: 13%;
   text-align: right;
 }
+@media (max-width: 767px) {
+  .miranda-review__image-wrapper {
+    margin-left: unset;
+  }
+}
 
 .miranda-review__header {
   text-align: left;
