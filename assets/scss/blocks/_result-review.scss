@@ -12,7 +12,7 @@
 .result-review__header {
     &::before {
         color: var(--color-result-review-counter);
-        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-width: 5px;
         -webkit-text-stroke-color: var(--color-result-review-counter-border);
     }
 }

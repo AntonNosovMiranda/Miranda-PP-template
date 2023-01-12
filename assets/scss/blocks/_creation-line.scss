@@ -17,7 +17,7 @@
 .creation-line__header {
     &::before {
         color: var(--color-creation-line-counter);
-        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-width: 5px;
         -webkit-text-stroke-color: var(--color-creation-line-counter-border);
     }
 }

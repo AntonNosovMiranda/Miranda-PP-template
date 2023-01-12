@@ -43,7 +43,7 @@
     margin-bottom: 20px;
     &::before {
         color: var(--color-intro-counter);
-        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-width: 5px;
         -webkit-text-stroke-color: var(--color-intro-counter-border);
     }
 }

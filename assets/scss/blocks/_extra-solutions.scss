@@ -15,7 +15,7 @@
 .extra-solutions__header {
     &::before {
         color: var(--color-extra-solutions-counter);
-        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-width: 5px;
         -webkit-text-stroke-color: var(--color-extra-solutions-counter-border);
     }
 }
