@@ -744,6 +744,37 @@ button {
   }
 }
 
+.intro__flex-container--custom-klokocka {
+  max-width: 1170px;
+}
+.intro__flex-container--custom-klokocka .intro__flex-item--image {
+  width: unset;
+  aspect-ratio: unset;
+  max-width: unset;
+}
+.intro__flex-container--custom-klokocka .intro__flex-item--image img {
+  height: 100%;
+  width: auto;
+  max-width: unset;
+}
+@media (max-width: 767px) {
+  .intro__flex-container--custom-klokocka .intro__flex-item--image {
+    width: calc(50% - 7.5px);
+    max-width: 240px;
+    aspect-ratio: 1/1;
+    overflow: visible;
+  }
+  .intro__flex-container--custom-klokocka .intro__flex-item--image img {
+    position: relative;
+    left: 100%;
+    -webkit-transform: translateX(-40%);
+            transform: translateX(-40%);
+    max-width: unset;
+    max-height: 100%;
+    width: auto;
+  }
+}
+
 .intro__flex-item {
   width: calc(25% - 15px);
   max-width: 240px;
