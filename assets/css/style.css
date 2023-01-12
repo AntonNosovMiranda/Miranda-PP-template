@@ -2058,6 +2058,34 @@ button {
   }
 }
 
+.banner-nb--custom-petcenter {
+  position: relative;
+}
+
+.banner-nb--custom-petcenter::after {
+  position: absolute;
+  bottom: -7px;
+  left: calc(50vw - 720px);
+  width: 89.5%;
+  max-width: 542px;
+  aspect-ratio: 1/1;
+  content: "";
+  background-image: url("assets/img/petcenter/image-banner-nb-2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top 0 left 0;
+}
+
+@media (max-width: 1504px) {
+  .banner-nb--custom-petcenter::after {
+    left: -2rem;
+  }
+}
+@media (max-width: 767px) {
+  .banner-nb--custom-petcenter::after {
+    display: none;
+  }
+}
 .banner-nb.--tile {
   background-repeat: repeat;
   background-size: contain;
