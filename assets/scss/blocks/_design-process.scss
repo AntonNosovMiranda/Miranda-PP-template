@@ -12,6 +12,11 @@
         -webkit-text-stroke-width: 5px;
         -webkit-text-stroke-color: var(--color-design-process-counter-border);
     }
+    @media (max-width: $width-mobile) {
+        &::before {
+            -webkit-text-stroke-width: 3px;
+        }
+    }
 }
 
 .design-process__wrapper {

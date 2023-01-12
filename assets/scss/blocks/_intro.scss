@@ -46,6 +46,11 @@
         -webkit-text-stroke-width: 5px;
         -webkit-text-stroke-color: var(--color-intro-counter-border);
     }
+    @media (max-width: $width-mobile) {
+        &::before {
+            -webkit-text-stroke-width: 3px;
+        }
+    }
 }
 
 .intro__text--small {

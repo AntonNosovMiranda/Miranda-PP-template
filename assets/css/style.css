@@ -717,6 +717,11 @@ button {
   -webkit-text-stroke-width: 5px;
   -webkit-text-stroke-color: var(--color-intro-counter-border);
 }
+@media (max-width: 767px) {
+  .intro__header::before {
+    -webkit-text-stroke-width: 3px;
+  }
+}
 
 .intro__text--small {
   color: var(--color-font-secondary);
@@ -963,6 +968,11 @@ button {
   -webkit-text-stroke-color: var(--color-task-banner-counter-border);
 }
 @media (max-width: 767px) {
+  .task-banner__header::before {
+    -webkit-text-stroke-width: 3px;
+  }
+}
+@media (max-width: 767px) {
   .task-banner__header {
     margin-bottom: 20px;
   }
@@ -1011,6 +1021,11 @@ button {
   color: var(--color-creation-line-counter);
   -webkit-text-stroke-width: 5px;
   -webkit-text-stroke-color: var(--color-creation-line-counter-border);
+}
+@media (max-width: 767px) {
+  .creation-line__header::before {
+    -webkit-text-stroke-width: 3px;
+  }
 }
 
 .creation-line__container {
@@ -1634,6 +1649,11 @@ button {
   color: var(--color-design-process-counter);
   -webkit-text-stroke-width: 5px;
   -webkit-text-stroke-color: var(--color-design-process-counter-border);
+}
+@media (max-width: 767px) {
+  .design-process__header::before {
+    -webkit-text-stroke-width: 3px;
+  }
 }
 
 .design-process__wrapper {
@@ -2718,6 +2738,11 @@ button {
   -webkit-text-stroke-width: 5px;
   -webkit-text-stroke-color: var(--color-result-review-counter-border);
 }
+@media (max-width: 767px) {
+  .result-review__header::before {
+    -webkit-text-stroke-width: 3px;
+  }
+}
 
 .result-review__container {
   display: -webkit-box;
@@ -2883,8 +2908,13 @@ button {
 }
 .miranda-review__header::before {
   color: var(--color-miranda-review-counter);
-  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-width: 5px;
   -webkit-text-stroke-color: var(--color-miranda-review-counter-border);
+}
+@media (max-width: 767px) {
+  .miranda-review__header::before {
+    -webkit-text-stroke-width: 3px;
+  }
 }
 
 .miranda-review__name {
@@ -2943,6 +2973,11 @@ button {
   color: var(--color-extra-solutions-counter);
   -webkit-text-stroke-width: 5px;
   -webkit-text-stroke-color: var(--color-extra-solutions-counter-border);
+}
+@media (max-width: 767px) {
+  .extra-solutions__header::before {
+    -webkit-text-stroke-width: 3px;
+  }
 }
 
 .extra-solutions__list {

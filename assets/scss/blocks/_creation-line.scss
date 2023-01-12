@@ -20,6 +20,11 @@
         -webkit-text-stroke-width: 5px;
         -webkit-text-stroke-color: var(--color-creation-line-counter-border);
     }
+    @media (max-width: $width-mobile) {
+        &::before {
+            -webkit-text-stroke-width: 3px;
+        }
+    }
 }
 
 .creation-line__container {
