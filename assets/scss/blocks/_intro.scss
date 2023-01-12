@@ -43,12 +43,12 @@
     margin-bottom: 20px;
     &::before {
         color: var(--color-intro-counter);
-        -webkit-text-stroke-width: 5px;
+        -webkit-text-stroke-width: var(--thickness-counter-border);
         -webkit-text-stroke-color: var(--color-intro-counter-border);
     }
     @media (max-width: $width-mobile) {
         &::before {
-            -webkit-text-stroke-width: 3px;
+            -webkit-text-stroke-width: var(--thickness-counter-border-mobile);
         }
     }
 }

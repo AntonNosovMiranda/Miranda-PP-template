@@ -15,12 +15,12 @@
 .extra-solutions__header {
     &::before {
         color: var(--color-extra-solutions-counter);
-        -webkit-text-stroke-width: 5px;
+        -webkit-text-stroke-width: var(--thickness-counter-border);
         -webkit-text-stroke-color: var(--color-extra-solutions-counter-border);
     }
     @media (max-width: $width-mobile) {
         &::before {
-            -webkit-text-stroke-width: 3px;
+            -webkit-text-stroke-width: var(--thickness-counter-border-mobile);
         }
     }
 }
